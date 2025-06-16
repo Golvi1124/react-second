@@ -1,8 +1,6 @@
 // to manage light/dark mode globally.
 
-//import { createContext, useState, useContext } from "react";
-import { createContext, useState } from "react";
-
+import { createContext, useState, useContext } from "react";
 
 const ThemeContext = createContext();
 
@@ -18,4 +16,4 @@ export const ThemeProvider = ({ children }) => {
   );
 };
 
-
+export const useTheme = () => useContext(ThemeContext);
