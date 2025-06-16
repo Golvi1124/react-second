@@ -1,0 +1,21 @@
+.app.light {
+  background: white;
+  color: black;
+}
+.app.dark {
+  background: #222;
+  color: white;
+}
+
+.tabs button {
+  border: none;
+  padding: 10px;
+  margin: 0 4px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.tabs button.active {
+  font-weight: bold;
+  outline: 2px solid black;
+}
