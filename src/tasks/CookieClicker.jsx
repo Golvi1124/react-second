@@ -1,8 +1,10 @@
 import { useState } from "react";
 
 export default function CookieClicker() {
+  // The initial state is passed as an argument to useState.
   const [count, setCount] = useState(0);
-  const handleClick = () => setCount((c) => c + 1);
+  // function that updates
+  const handleClick = () => setCount((prev) => prev + 1);
   const [isVisible, setIsVisible] = useState(false);
   const toggleVisibility = () => setIsVisible(!isVisible);
 
