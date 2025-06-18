@@ -15,7 +15,7 @@ export default function FiveCatBreeds() {
           throw new Error(`HTTP error. Status: ${response.status}`);
         }
         const result = await response.json();
-        setBreeds(result.breeds);
+        setBreeds(result.data);
       } catch (error) {
         setError(error.message);
       } finally {
