@@ -1,9 +1,9 @@
 import { useState } from "react";
 
 const catTabData = [
-  { name: "RandomCatFact", color: "lightyellow" },
-  { name: "FiveCatFacts", color: "lightyellow" },
-  { name: "FiveCatBreeds", color: "lightyellow" },
+  { name: "RandomCatFact", label: "Random cat fact", color: "lightyellow" },
+  { name: "FiveCatFacts", label: "Five cat facts", color: "lightyellow" },
+  { name: "FiveCatBreeds", label: "Five cat breeds", color: "lightyellow" },
 ];
 
 function CatTabs({ onTabChange }) {
@@ -20,7 +20,7 @@ function CatTabs({ onTabChange }) {
           }}
           className={activeCatTab === tab.name ? "active" : ""}
         >
-          {tab.name}
+          {tab.label}
         </button>
       ))}
     </div>
