@@ -26,12 +26,12 @@ export default function RandomCatFact() {
 
   return (
     <div>
-      <button onClick={fetchFact} style={{ marginBottom: "0.5rem" }}>
-        New fact
-      </button>
       {loading && <p>Loading...</p>}
       {error && <p style={{ color: "red" }}>Error: {error}</p>}
       {!loading && !error && <p>{fact}</p>}
+            <button onClick={fetchFact} style={{ marginTop: "0.5rem" }}>
+        Give me another!
+      </button>
     </div>
   );
 }
